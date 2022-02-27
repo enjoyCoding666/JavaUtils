@@ -5,7 +5,12 @@ import java.util.List;
 
 public class ListUtils {
 
-    public static String listToString(List<String> list){
+    public static String listToString(List<String> list) {
+        return String.join(",",list);
+    }
+
+
+    public static String listToString2(List<String> list){
         if(list==null){
             return null;
         }
